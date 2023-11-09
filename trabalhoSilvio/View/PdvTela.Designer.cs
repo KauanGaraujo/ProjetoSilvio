@@ -214,6 +214,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(436, 253);
             dataGridView1.TabIndex = 4;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // prod
             // 
@@ -365,7 +366,6 @@
         private Button button2;
         private Button button1;
         private GroupBox groupBox2;
-        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn prod;
         private DataGridViewTextBoxColumn qtd;
         private DataGridViewTextBoxColumn uni;
@@ -385,5 +385,6 @@
         private Label label8;
         private Label label7;
         private Label label6;
+        public DataGridView dataGridView1;
     }
 }

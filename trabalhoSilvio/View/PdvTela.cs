@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,8 +13,11 @@ namespace trabalhoSilvio.View
 {
     public partial class PdvTela : Form
     {
-        int totalfinal = 0;
+
+
+        public int totalfinal = 0;
         public PdvTela()
+
         {
             InitializeComponent();
         }
@@ -39,19 +43,19 @@ namespace trabalhoSilvio.View
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string registrorefri = button5.Text = "5";
+            string registrorefri = button5.Text = "4";
             textBox1.Text = registrorefri;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string registrosucos = button6.Text = "6";
+            string registrosucos = button6.Text = "5";
             textBox1.Text = registrosucos;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            string registrosuco = button7.Text = "7";
+            string registrosuco = button7.Text = "6";
             textBox1.Text = registrosuco;
         }
 
@@ -71,6 +75,7 @@ namespace trabalhoSilvio.View
 
             label5.Text = "R$" + totalfinal.ToString();
 
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -83,8 +88,13 @@ namespace trabalhoSilvio.View
 
         private void button9_Click(object sender, EventArgs e)
         {
-            TelaFechaVenda tela = new TelaFechaVenda();
+            TelaFechaVenda tela = new TelaFechaVenda(this);
             tela.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

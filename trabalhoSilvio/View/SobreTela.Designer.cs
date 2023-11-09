@@ -43,7 +43,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(22, 50);
+            label1.Location = new Point(106, 25);
             label1.Name = "label1";
             label1.Size = new Size(71, 25);
             label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(22, 170);
+            label2.Location = new Point(12, 118);
             label2.Name = "label2";
             label2.Size = new Size(94, 25);
             label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(38, 111);
+            label3.Location = new Point(117, 73);
             label3.Name = "label3";
             label3.Size = new Size(43, 25);
             label3.TabIndex = 2;
@@ -73,8 +73,9 @@
             // 
             textBox1.BackColor = Color.BlueViolet;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(108, 50);
+            textBox1.Location = new Point(200, 28);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(225, 29);
             textBox1.TabIndex = 3;
             textBox1.Text = "Kauan Guimarães Araujo";
@@ -83,21 +84,23 @@
             // 
             textBox2.BackColor = Color.BlueViolet;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(144, 111);
+            textBox2.Location = new Point(179, 69);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(136, 29);
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(281, 29);
             textBox2.TabIndex = 4;
-            textBox2.Text = "KauanGaraujo";
+            textBox2.Text = "https://github.com/KauanGaraujo";
             // 
             // textBox3
             // 
             textBox3.BackColor = Color.BlueViolet;
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(144, 170);
+            textBox3.Location = new Point(112, 114);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(136, 29);
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(435, 29);
             textBox3.TabIndex = 5;
-            textBox3.Text = "Kauan Araujo";
+            textBox3.Text = "https://www.linkedin.com/in/kauan-araujo-2b1b8a254/";
             // 
             // groupBox1
             // 
@@ -109,12 +112,13 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label3);
             groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox1.Location = new Point(194, 53);
+            groupBox1.Location = new Point(88, 53);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(403, 287);
+            groupBox1.Size = new Size(553, 287);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "INFORMAÇÕES";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // SobreTela
             // 
