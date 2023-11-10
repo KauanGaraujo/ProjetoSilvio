@@ -25,10 +25,10 @@ namespace trabalhoSilvio.View
 
             {
 
-                label16.Text += "\nPRODUTO : " + xuxa.dataGridView1.Rows[i].Cells[0].Value.ToString();
-                label16.Text += "\nQUANTIDADE : " + xuxa.dataGridView1.Rows[i].Cells[1].Value.ToString();
-                label16.Text += "\nUNITÁRIO : " + xuxa.dataGridView1.Rows[i].Cells[2].Value.ToString();
-                label6.Text += "\nTOTAL : " + xuxa.dataGridView1.Rows[1].Cells[3].Value.ToString();
+                label16.Text += "\nPRODUTO : " + xuxa.dataGridView1.Rows[i].Cells[0].Value.ToString()+
+                "  QUANTIDADE : " + xuxa.dataGridView1.Rows[i].Cells[1].Value.ToString() +
+                "  UNITÁRIO : " + xuxa.dataGridView1.Rows[i].Cells[2].Value.ToString() +
+                "  TOTAL : " + xuxa.dataGridView1.Rows[1].Cells[3].Value.ToString();
 
                 label5.Text = DateTime.Now.ToString();
             }
